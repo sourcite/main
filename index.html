@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Ideas are Bulletproof.</title>
+    <style>
+      body{
+        background-color:#000000;
+        background-image:url(https://sourcite.github.io/main/starPattern2.jpg);
+        animation: galaxyMarquee 45s linear infinite;
+
+      }
+      @keyframes galaxyMarquee{
+        100%{background-position-x:-1600px;}
+      }
+      #bigDiv{
+        height:36.5vh;
+        width:50.39vw;
+        margin: 28vh 25vw 32vh 25vw;
+      }
+      .subDiv{
+        text-align:center;
+        width:40vw;
+        height:6vh;
+        font-family:helvetica, sans-serif;
+        font-size:2vw;
+        color:rgb(205, 205, 205);
+        background-color:rgba(0, 0, 0, 0.65);
+        padding:1.4vh 5vw 0vh 5vw;
+        margin:1vh 0 1vh 0;
+        border:0.5vh solid rgb(60, 60, 60);
+        border-radius:2vh;
+        transition: all 3s;
+      }
+      a:hover > .subDiv{
+        background-color:rgba(80, 80, 80, 0.65);
+        border:0.5vh solid rgb(140, 140, 140);
+        color:rgb(255, 255, 255);
+        transition:0.4s;
+      }
+      a{
+        user-select:none;
+        text-decoration:none;
+      }
+    </style>
+  </head>
+  <body>
+    update
+    <div id="backgroundMarquee"></div>
+    <div id="bigDiv">
+      <a href="https://sourcite.github.io/main/proxy"><div class="subDiv">Proxy (WIP, Nonfunctional)</div></a>
+      <a href="https://sourcite.github.io/main/turnMyComputerIntoAPaperweight"><div class="subDiv">Batch Fork</div></a>
+      <a href="https://sourcite.github.io/main/images"><div class="subDiv">Lorem Ipsum</div></a>
+      <a href="https://sourcite.github.io/main/downloads"><div class="subDiv">Downloads</div></a>
+    </div>
+  </body>
+</html>
+<!--What are you doing here?-->
