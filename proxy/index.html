@@ -1,2 +1,21 @@
-<title>Sourcite Proxy</title>
-<iframe src="https://google.com" width="1500px" height="600px" allowfullscreen="true"></iframe>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ideas are Bulletproof.</title>
+    <script>
+        function setIframeTarget() {
+            var target = document.getElementById('inputTargetUrl').value;
+            document.getElementById("proxyFrame").src = target;
+            return false; // Prevent form submission
+        }
+    </script>
+</head>
+<body>
+    <form id="inputTargetForm" onsubmit="return setIframeTarget();">
+        <label for="inputTargetUrl">Target URL:</label>
+        <input type="url" id="inputTargetUrl" placeholder="https://www.example.com">
+        <input type="submit" value="Submit">
+    </form><br>
+    <iframe src="targetPlaceholder.html" width="1500" height="600" allowfullscreen="true" id="proxyFrame"></iframe>
+</body>
+</html>
